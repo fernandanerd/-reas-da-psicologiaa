@@ -1,0 +1,44 @@
+0<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <p id="erro" style="color: red; font-weight: bold;"></p>
+ <div id="form">
+   <form action="login" method="post">
+
+
+       <h2 class="title">Cadastrar</h2>
+
+    <label for="username">Nome</label>
+    <div class="input">
+        <i class="fa-solid fa-circle-user"></i>
+        <input id="username" name="username" placeholder="Username" type="text">
+    </div>
+
+    <label for="email">Email</label>
+    <div class="input">
+        <i class="fa-solid fa-envelope"></i>
+    <input id="email" name="email" placeholder="Email" type="text">
+    </div>
+
+    <label for="">Senha</label>
+    <div class="input">
+        <i class="fa-solid fa-key"></i>
+    <input id="senha" name="senha" placeholder="Senha" type="password">
+    </div>
+
+    <div id="btn">
+   <button type="button" onclick="validarForm()">Cadastrar</button>
+    </div>
+
+</form>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
