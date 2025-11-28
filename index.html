@@ -3,48 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O que é Psicologia</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+<link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <p id="erro" style="color: red; font-weight: bold;"></p>
+ <div id="form">
+   <form action="login" method="post">
 
-    <nav class="navbar">
-    <div class="logo">Menu</div>
 
-    <ul class="menu">
-<a target="_blank" href="index2.html">Importância</a>
-<a target="_blank" href="index3.html">Áreas da psicologia</a>
-<a target="_blank" href="contato.html">Contatos</a>
-    </ul>
+       <h2 class="title">Cadastrar</h2>
 
-    <div class="mobile-btn">&#9776;</div>
-</nav>
-
+    <label for="username">Nome</label>
+    <div class="input">
+        <i class="fa-solid fa-circle-user"></i>
+        <input id="username" name="username" placeholder="Username" type="text">
     </div>
-        <h2>O que é Psicologia?</h2>
-    <div class="container">
-        <img src="imagens/download.jpg" alt="psicologa">
-    <p>
-<br><b>O que é Psicologia</b>
-<br>A psicologia é a ciência que estuda o comportamento humano
-<br>e os processos mentais, como emoções, pensamentos,
-<br>percepções e motivações. Seu objetivo é compreender
-<br>como as pessoas sentem, pensam e agem em diferentes situações,
-<br>considerando fatores biológicos, sociais, culturais e emocionais
-<br>Além de investigar como a mente funciona, a psicologia também
-<br>busca promover bem-estar e qualidade de vida. Por isso, o psicólogo
-<br>atua em diversas áreas, como saúde mental, educação, trabalho,
-<br>esportes, relações humanas e desenvolvimento pessoal. Ele ajuda pessoas
-<br>a lidarem com problemas emocionais, dificuldades comportamentais,
-<br>conflitos internos e situações estressantes, oferecendo apoio
-<br>profissional e técnicas baseadas em estudos científicos.
-<br>Em resumo, a psicologia combina conhecimento científico com compreensão
-<br>humana, ajudando indivíduos e grupos a se conhecerem melhor e a viverem
-<br>de forma mais equilibrada e saudável.
-    </p></div>
-</div>
-</fieldset>
 
-<small><footer>by: Fernanda</footer></small>
+    <label for="email">Email</label>
+    <div class="input">
+        <i class="fa-solid fa-envelope"></i>
+    <input id="email" name="email" placeholder="Email" type="text">
+    </div>
+
+    <label for="">Senha</label>
+    <div class="input">
+        <i class="fa-solid fa-key"></i>
+    <input id="senha" name="senha" placeholder="Senha" type="password">
+    </div>
+
+    <div id="btn">
+   <button type="button" onclick="validarForm()">Cadastrar</button>
+    </div>
+
+</form>
+    </div>
+<script src="js/script.js"></script>
 </body>
 </html>
