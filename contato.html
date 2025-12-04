@@ -1,38 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato – Problemas no Site</title>
-    <link rel="stylesheet" href="css/contato.css">
+    <title>Contato Simples</title>
+    <link rel="stylesheet" href="/fernanda 1a/css/contato.css">
 </head>
 <body>
 
+<nav>
+ <ul>
+<li> <a href="index.html">Menu</a></li>
+</ul>
+</nav>
+
     <div class="container">
-        <h1>Relatar um Problema</h1>
-        <p>Encontrou algum erro? Fale conosco e vamos resolver rapidamente!</p>
+        <h1>Fale Conosco</h1>
 
-        <form action="enviar_contato.php" method="POST">
-            <label for="nome">Seu nome</label>
-            <input type="text" id="nome" name="nome" required>
+        <form id="formContato">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" required>
 
-            <label for="email">Seu e-mail</label>
-            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Sua mensagem:</label>
+            <textarea id="mensagem" required></textarea>
 
-            <label for="mensagem">Descreva o problema</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-
-            <button type="submit">Enviar Mensagem</button>
+            <button type="submit">Enviar</button>
         </form>
-
-        <div class="footer">
-            Preferiu enviar direto? <br>
-            <strong>suporte@gmail.com</strong>
-        </div>
     </div>
 
-</body>
-</html>
-
+    <script src="/fernanda 1a/js/script.js"></script>
 </body>
 </html>
